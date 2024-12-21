@@ -47,17 +47,17 @@ setAlert(null);
 <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
 <Alert alert={alert}/>
 <div className='container my-3'>
-<Routes>
-          <Route exact path="/about" element={<About />}>
+ <Routes>
+          <Route exact path="/about" element={<About mode={mode}/>}>
             
           </Route>
          
-          <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>}>
-          {/* <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/> */}
+          <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter, Remove extra spaces" mode={mode}/>}> */}
+           {/* <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/> */}
           </Route>
         </Routes>
         </div>
-</Router>
+ </Router> 
 
   </>
   );
